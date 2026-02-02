@@ -18,34 +18,42 @@ Diagnostiquer un réseau
 
 Manipuler les cartes réseau, les adresses IP, le DNS et le firewall
 
+
+Emel: IP & DNS
+
 # Notions travaillées
 
-Test-Connection, Test-NetConnection
 
-Get-NetAdapter, Enable-NetAdapter, Disable-NetAdapter
-
-Get-NetIPAddress, New-NetIPAddress
-
-Get-DnsClientServerAddress, Set-DnsClientServerAddress
-
-Get-NetFirewallRule, New-NetFirewallRule
 
 # Exercices réalisés
 
-Diagnostic du réseau (ping, port, DNS)
 
-Affichage et modification de l’adresse IP
+Mateo: Firewal
 
-Activation/désactivation d’un adaptateur réseau
+# Notions travaillées
 
-# Dossier Thème 1 contient :
 
-/Resumes/administration_reseau.md
 
-/Exercices/administration_reseau_exercice1.md
+# Exercices réalisés
 
-/Corrections/administration_reseau_solution1.md
 
-/Scripts/reseau_script.ps1
-/Flowcharts/reseau_flux.png
+YURI: Diganostic réseau
+
+# Notions travaillées
+
+
+
+# Exercices réalisés
+
+
+Adin: Adaptateurs réseau
+
+# Notions travaillées
+
+
+
+# Exercices réalisés
+
+
+
 # Administration serveur
