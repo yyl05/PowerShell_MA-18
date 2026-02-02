@@ -46,13 +46,24 @@ YURI: Diganostic réseau
 # Exercices réalisés
 
 
-Adin: Adaptateurs réseau
+Adin: Adaptateurs réseau 
 
 # Notions travaillées
-
-
+Get-NetAdapter — liste des adaptateurs  	
+Get-NetAdapterStatistics — statistiques réseau  
+Enable-NetAdapter / Disable-NetAdapter  
+Restart-NetAdapter — redémarrage d’une interface  
+Get-NetAdapterAdvancedProperty — propriétés avancées (duplex, vitesse…)  
+Comprendre : interface Ethernet / WiFi / virtuelle  
 
 # Exercices réalisés
+Lister les adaptateurs et identifier leur état
+
+Lire des statistiques (paquets envoyés/reçus)
+
+Désactiver puis réactiver une interface
+
+Afficher les propriétés avancées de l’adaptateur
 
 
 
