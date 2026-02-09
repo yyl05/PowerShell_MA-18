@@ -53,7 +53,7 @@ Identifier et résoudre les dysfonctionnements
 
 ## Objectifs d'apprentissage
 
-- [ ] Maîtriser les commandes PowerShell réseau
+- [ ] Maîtriser les commandes PowerShell réseau ci dessus
 - [ ] Identifier les problèmes de connectivité
 - [ ] Configurer et gérer les adaptateurs
 - [ ] Interpréter les diagnostics réseau
