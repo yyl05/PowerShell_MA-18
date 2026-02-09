@@ -15,7 +15,7 @@
 ## ANALYSE
 
 ### Description générale
-Les adaptateurs réseau sont **essentiels au fonctionnement** d'un système informatique connecté. PowerShell permet de les administrer efficacement via des **cmdlets dédiées**, notamment pour l'analyse, le diagnostic et la configuration réseau.
+Les adaptateurs réseau sont essentiels au fonctionnement d'un système informatique connecté. PowerShell permet de les administrer efficacement via des cmdlets dédiées, notamment pour l'analyse, le diagnostic et la configuration réseau.
 
 ---
 
