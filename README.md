@@ -37,7 +37,7 @@ Mateo: Firewal
 # Exercices réalisés
 
 
-YURI: Diganostic réseau
+Yuri: Diganostic réseau
 
 # Notions travaillées
 
