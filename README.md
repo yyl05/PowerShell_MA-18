@@ -18,34 +18,53 @@ Diagnostiquer un réseau
 
 Manipuler les cartes réseau, les adresses IP, le DNS et le firewall
 
+
+Emel: IP & DNS
+
 # Notions travaillées
 
-Test-Connection, Test-NetConnection
 
-Get-NetAdapter, Enable-NetAdapter, Disable-NetAdapter
-
-Get-NetIPAddress, New-NetIPAddress
-
-Get-DnsClientServerAddress, Set-DnsClientServerAddress
-
-Get-NetFirewallRule, New-NetFirewallRule
 
 # Exercices réalisés
 
-Diagnostic du réseau (ping, port, DNS)
 
-Affichage et modification de l’adresse IP
+Mateo: Firewal
 
-Activation/désactivation d’un adaptateur réseau
+# Notions travaillées
 
-# Dossier Thème 1 contient :
 
-/Resumes/administration_reseau.md
 
-/Exercices/administration_reseau_exercice1.md
+# Exercices réalisés
 
-/Corrections/administration_reseau_solution1.md
 
-/Scripts/reseau_script.ps1
-/Flowcharts/reseau_flux.png
+Yuri: Diganostic réseau
+
+# Notions travaillées
+
+
+
+# Exercices réalisés
+
+
+Adin: Adaptateurs réseau 
+
+# Notions travaillées
+Get-NetAdapter — liste des adaptateurs  	
+Get-NetAdapterStatistics — statistiques réseau  
+Enable-NetAdapter / Disable-NetAdapter  
+Restart-NetAdapter — redémarrage d’une interface  
+Get-NetAdapterAdvancedProperty — propriétés avancées (duplex, vitesse…)  
+Comprendre : interface Ethernet / WiFi / virtuelle  
+
+# Exercices réalisés
+Lister les adaptateurs et identifier leur état
+
+Lire des statistiques (paquets envoyés/reçus)
+
+Désactiver puis réactiver une interface
+
+Afficher les propriétés avancées de l’adaptateur
+
+
+
 # Administration serveur
