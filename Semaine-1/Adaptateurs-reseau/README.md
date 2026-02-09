@@ -1,5 +1,7 @@
 # 🌐 Administration des Adaptateurs Réseau avec PowerShell
 
+<img src="https://raw.githubusercontent.com/PowerShell/PowerShell/master/assets/Powershell_256.png" width="80" alt="PowerShell Logo">
+
 ---
 
 ## 📚 Informations Générales
@@ -14,27 +16,26 @@
 
 ## ANALYSE
 
-### Description générale
-Les adaptateurs réseau sont essentiels au fonctionnement d'un système informatique connecté. PowerShell permet de les administrer efficacement via des cmdlets dédiées, notamment pour l'analyse, le diagnostic et la configuration réseau.
+Les adaptateurs réseau sont **essentiels au fonctionnement** d'un système informatique connecté. PowerShell permet de les administrer efficacement via des **cmdlets dédiées**.
 
 ---
 
 ## Notions Clés
 
 ### Identifier les adaptateurs réseau
-Découvrir et lister tous les adaptateurs disponibles sur le système
+Découvrir et lister tous les adaptateurs disponibles
 
 ### Vérifier leur état (activé / désactivé)
 Contrôler le statut opérationnel de chaque interface
 
 ### Activer / désactiver un adaptateur
-Gérer l'activation et la désactivation des interfaces réseau
+Gérer l'activation et la désactivation des interfaces
 
 ### Obtenir les informations IP
 Récupérer les configurations d'adresses IP
 
-###  Diagnostiquer des problèmes simples
-Identifier et résoudre les dysfonctionnements courants
+### Diagnostiquer des problèmes simples
+Identifier et résoudre les dysfonctionnements
 
 ---
 
@@ -50,4 +51,13 @@ Identifier et résoudre les dysfonctionnements courants
 
 ---
 
+## Objectifs d'apprentissage
 
+- [ ] Maîtriser les commandes PowerShell réseau
+- [ ] Identifier les problèmes de connectivité
+- [ ] Configurer et gérer les adaptateurs
+- [ ] Interpréter les diagnostics réseau
+
+---
+
+**Adin Durakovic** | *Adaptateurs réseau*
