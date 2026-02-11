@@ -46,9 +46,8 @@ Identifier et résoudre les dysfonctionnements
 | `Enable-NetAdapter` | Active un adaptateur |
 | `Disable-NetAdapter` | Désactive un adaptateur |
 | `Get-NetAdapterStatistics` | Statistiques de l'adaptateur |
-
-Get-Process -Confirm:$false\tObtains the list of active processes without asking for confirmation.
-Remove-Item -Confirm:$false\tDeletes an item without confirmation prompt.
+| `Get-Process -Confirm:$false` | Obtains the list of active processes without asking for confirmation. |
+| `Remove-Item -Confirm:$false` | Deletes an item without confirmation prompt. |
 
 ---
 
