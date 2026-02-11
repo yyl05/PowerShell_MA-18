@@ -52,20 +52,11 @@ Identifier et résoudre les dysfonctionnements
 |`Remove-Item -Confirm:$false`|	Obtient la liste des processus actifs sans demander de confirmation |
 
 
----
 
-## Objectifs d'apprentissage
 
-- [ ] Maîtriser les commandes PowerShell réseau ci dessus
-- [ ] Identifier les problèmes de connectivité
-- [ ] Configurer et gérer les adaptateurs
-- [ ] Interpréter les diagnostics réseau
 
----
 
-**Adin Durakovic** | *Adaptateurs réseau*
 	
-|`Remove-Item -Confirm:$false`	
 
 
 ---
