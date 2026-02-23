@@ -237,7 +237,7 @@ Pour aller plus loin :
 
 ## 📄 Informations supplémentaires
 
-**Auteur :** Projet scolaire  
+**Auteur :** Mateo  
 **Date de création :** 2026-02-23  
 **Environnement :** Windows 10/11 avec PowerShell 5.1+  
 **Privilèges requis :** Administrateur
