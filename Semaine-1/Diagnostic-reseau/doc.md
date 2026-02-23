@@ -162,4 +162,9 @@ Get-NetTCPConnection | Where-Object State -eq "Established"
 
 ## Conclusion
 
+PowerShell est un outil simple et efficace pour diagnostiquer les problèmes réseau sous Windows. Grâce à quelques commandes essentielles, il est possible de vérifier la connectivité, consulter la configuration IP, analyser les interfaces réseau et examiner les connexions actives.
+
+En utilisant une méthode structurée, on peut identifier rapidement l’origine d’un problème et intervenir plus efficacement. La maîtrise de ces commandes facilite donc le dépannage et améliore la gestion quotidienne du réseau.
+
+
 
