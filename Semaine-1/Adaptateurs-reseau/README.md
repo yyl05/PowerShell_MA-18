@@ -48,16 +48,15 @@ Identifier et résoudre les dysfonctionnements
 | `Enable-NetAdapter` | Active un adaptateur |
 | `Disable-NetAdapter` | Désactive un adaptateur |
 | `Get-NetAdapterStatistics` | Statistiques de l'adaptateur |
-|`Get-Process -Confirm:$false`|	Supprime un élément sans demander de confirmation |
-|`Remove-Item -Confirm:$false`|	Obtient la liste des processus actifs sans demander de confirmation |
-
-
-
-
+|`Get-Process -Confirm:$false`|	Obtient la liste des processus actifs sans demander de confirmation |
+|`Remove-Item -Confirm:$false`| Supprime un élément sans demander de confirmation |
 
 
 	
 
+
+
+	
 
 ---
 
