@@ -1,295 +1,176 @@
-# Diagnostic Réseau avec PowerShell
-
-## Introduction
-
-Nous allons apprendre comment utiliser **PowerShell** pour effectuer des tests de connectivité réseau et analyser la configuration réseau d’un système Windows.
-
-Ces compétences sont essentielles pour :
-
-- Diagnostiquer des problèmes de connectivité  
-- Vérifier l’état des interfaces réseau  
-- Analyser les routes et connexions actives  
-- Optimiser les performances réseau  
-
-La gestion des paramètres réseau peut rapidement devenir complexe pour les administrateurs système. PowerShell permet d’automatiser ces diagnostics de manière fiable et reproductible.
+# 🌐 Diagnostic Réseau avec PowerShell  <img src="https://raw.githubusercontent.com/PowerShell/PowerShell/master/assets/Powershell_256.png" width="40" alt="PowerShell Logo">
 
 ---
 
-## Prérequis
+## 📚 Informations Générales
 
-- Windows 10 / Windows Server 2016 ou plus récent  
-- PowerShell 5.1 ou supérieur  
-- Droits administrateur pour certaines commandes  
-
----
-
-# Tester la connectivité réseau
-
-## Test-Connection
-
-Équivalent de la commande `ping`, elle permet de vérifier si une machine distante est joignable.
-
-```powershell
-Test-Connection google.com
-```
-
-Exemple avec un nombre de requêtes défini :
-
-```powershell
-Test-Connection google.com -Count 4
-```
+| Élément | Détail |
+|---------|--------|
+| **Sous-thème** | Diagnostic réseau |
+| **Élève** | Adin Durakovic |
+| **Domaine** | Administration système & Réseau |
 
 ---
 
-## Test-NetConnection
+## 🔎 ANALYSE
 
-Commande plus avancée que `Test-Connection`, elle permet de tester la connectivité réseau ainsi que des ports spécifiques.
+Le diagnostic réseau est une étape essentielle pour identifier l’origine d’un problème de connectivité.
 
-```powershell
-Test-NetConnection google.com
-```
+Lorsqu’un utilisateur ne peut pas accéder à Internet ou à une ressource réseau, il est nécessaire de vérifier plusieurs éléments :
 
-Test d’un port spécifique (ex : HTTPS) :
+- L’état de la connexion réseau
+- La configuration IP
+- La résolution DNS
+- L’accessibilité des ports
+- Les routes réseau
+- Les connexions actives
 
-```powershell
-Test-NetConnection google.com -Port 443
-```
-
----
-
-# Informations sur la configuration réseau
-
-## Get-NetIPAddress
-
-Affiche les adresses IP configurées sur le système.
-
-```powershell
-Get-NetIPAddress
-```
+PowerShell fournit des outils puissants permettant d’analyser rapidement et efficacement ces différents points.
 
 ---
 
-## Get-NetIPConfiguration
+## 🧠 Notions Clés
 
-Affiche une vue complète de la configuration réseau (IP, passerelle, DNS).
+### 🔹 Tester la connectivité
+Vérifier si une machine distante est joignable.
 
-```powershell
-Get-NetIPConfiguration
-```
+### 🔹 Vérifier la configuration IP
+Contrôler l’adresse IP, la passerelle et les serveurs DNS.
 
----
+### 🔹 Tester les ports réseau
+Vérifier si un service (HTTPS, RDP, etc.) est accessible.
 
-## Get-NetAdapter
+### 🔹 Analyser les routes
+Examiner la table de routage du système.
 
-Liste les interfaces réseau disponibles et leur état.
-
-```powershell
-Get-NetAdapter
-```
-
-Afficher uniquement les interfaces actives :
-
-```powershell
-Get-NetAdapter | Where-Object Status -eq "Up"
-```
+### 🔹 Examiner les connexions actives
+Identifier les connexions TCP en cours.
 
 ---
 
-# Gestion des interfaces réseau
+## 💻 Commandes PowerShell Essentielles
 
-## Enable-NetAdapter
-
-Active une interface réseau.
-
-```powershell
-Enable-NetAdapter -Name "Ethernet"
-```
-
----
-
-## Disable-NetAdapter
-
-Désactive une interface réseau.
-
-```powershell
-Disable-NetAdapter -Name "Ethernet"
-```
-
-⚠️ Cette commande peut couper la connexion réseau distante. Faire attention à l'usage.
+| Commande | Description |
+|----------|-------------|
+| `Test-Connection` | Teste la connectivité (équivalent ping) |
+| `Test-NetConnection` | Teste la connectivité et les ports |
+| `Get-NetIPConfiguration` | Affiche la configuration IP complète |
+| `Get-NetRoute` | Affiche la table de routage |
+| `Get-NetTCPConnection` | Affiche les connexions TCP actives |
+| `Resolve-DnsName` | Vérifie la résolution DNS |
 
 ---
 
-# Analyse du routage réseau
+## 🔍 Analyse des Commandes
 
-## Get-NetRoute
+### 1️⃣ Test-Connection
 
-Affiche la table de routage du système.
+Permet de vérifier si une machine distante répond.
 
-```powershell
-Get-NetRoute
-```
-
----
-
-# Analyse des connexions TCP
-
-## Get-NetTCPConnection
-
-Affiche les connexions TCP actives sur le système.
-
-```powershell
-Get-NetTCPConnection
-```
-
-Filtrer par état :
-
-```powershell
-Get-NetTCPConnection | Where-Object State -eq "Established"
-```
+📌 Analyse :
+- Réponse rapide (< 20 ms) → Connexion correcte
+- Latence élevée → Possible congestion réseau
+- Aucune réponse → Problème réseau ou pare-feu
 
 ---
 
-# Analyse approfondie des résultats
+### 2️⃣ Test-NetConnection
 
-## Analyse de la connectivité
+Permet de tester un port spécifique.
 
-### Interprétation de Test-Connection
+Exemple :
+- Port 443 → HTTPS
+- Port 3389 → RDP
 
-Points importants à analyser :
-
-- **Latency (ResponseTime)**  
-  - < 10 ms → Réseau local performant  
-  - 10–50 ms → Connexion correcte  
-  - > 100 ms → Possible latence réseau ou problème WAN  
-
-- **Perte de paquets (Packet Loss)**  
-  - 0% → Normal  
-  - > 0% → Problème potentiel (Wi-Fi instable, surcharge, câble défectueux)
-
-Si la commande échoue totalement :
-
-- Vérifier la résolution DNS  
-- Vérifier la passerelle par défaut  
-- Tester une IP directe (ex : `8.8.8.8`) pour exclure un problème DNS  
+📌 Analyse :
+- `TcpTestSucceeded : True` → Service accessible
+- `TcpTestSucceeded : False` → Port bloqué ou service arrêté
 
 ---
 
-### Interprétation de Test-NetConnection
+### 3️⃣ Get-NetIPConfiguration
 
-Points clés :
+Permet de vérifier :
 
-- **TcpTestSucceeded : True**
-  - Le port distant est ouvert  
+- Adresse IP
+- Passerelle par défaut
+- Serveurs DNS
 
-- **TcpTestSucceeded : False**
-  - Port bloqué (firewall, service arrêté, filtrage réseau)
-
-Exemples :
-
-- Port 443 fermé → Service HTTPS indisponible  
-- Port 3389 fermé → RDP inaccessible  
-
-Cela permet d’identifier si le problème est :
-
-- Réseau  
-- Pare-feu  
-- Service applicatif  
+📌 Analyse :
+- Adresse `169.254.x.x` → Problème DHCP
+- Pas de passerelle → Impossible d’accéder à Internet
+- DNS incorrect → Problème de résolution des noms
 
 ---
 
-## Analyse de la configuration IP
+### 4️⃣ Get-NetRoute
 
-Avec `Get-NetIPConfiguration`, vérifier :
+Affiche la table de routage.
 
-1. Adresse IP valide  
-   - 169.254.x.x → Problème DHCP (APIPA)
-
-2. Passerelle par défaut configurée  
-   - Absente → Impossible d’accéder à Internet
-
-3. Serveurs DNS corrects  
-   - Mauvais DNS → Résolution de noms impossible
+📌 Analyse :
+- Vérifier la présence de la route par défaut (`0.0.0.0/0`)
+- Identifier d’éventuelles routes incorrectes
 
 ---
 
-## Analyse des interfaces réseau
+### 5️⃣ Get-NetTCPConnection
 
-Avec `Get-NetAdapter`, contrôler :
+Permet d’analyser les connexions TCP actives.
 
-- **Status = Up** → Interface active  
-- **Status = Disconnected** → Câble débranché ou Wi-Fi non connecté  
-- **Speed faible ou fluctuante** → Possible problème matériel  
-
----
-
-## Analyse de la table de routage
-
-Avec `Get-NetRoute`, vérifier :
-
-- Présence d’une route par défaut (`0.0.0.0/0`)  
-- Routes statiques incorrectes  
-- Conflits de métriques  
-
-Une mauvaise route peut empêcher l’accès à certains réseaux.
+📌 Analyse :
+- Trop de connexions `TIME_WAIT` → Possible surcharge
+- Connexions inhabituelles → Vérification de sécurité recommandée
 
 ---
 
-## Analyse des connexions TCP
+## 🛠 Exemple de Scénario de Diagnostic
 
-Avec `Get-NetTCPConnection`, examiner :
+1. Vérifier la configuration IP  
+   → `Get-NetIPConfiguration`
 
-- Trop de connexions en **TIME_WAIT** → Possible surcharge  
-- Nombre élevé de connexions **Established** vers une IP suspecte  
-- Ports locaux ouverts inattendus → Risque de sécurité  
+2. Tester la passerelle locale  
+   → `Test-Connection`
 
----
+3. Tester une IP publique  
+   → `Test-Connection 8.8.8.8`
 
-# Méthodologie de diagnostic structurée
+4. Tester un nom de domaine  
+   → `Test-Connection google.com`
 
-Lors d’un incident réseau, suivre cet ordre logique :
+5. Tester un port spécifique  
+   → `Test-NetConnection google.com -Port 443`
 
-1. Vérifier l’interface réseau (`Get-NetAdapter`)  
-2. Vérifier la configuration IP (`Get-NetIPConfiguration`)  
-3. Tester la passerelle locale  
-4. Tester une IP publique  
-5. Tester un nom de domaine  
-6. Tester un port spécifique  
-7. Vérifier les routes  
-8. Examiner les connexions actives  
+6. Vérifier les routes  
+   → `Get-NetRoute`
 
----
-
-# Problèmes courants et causes possibles
-
-| Symptôme | Cause probable |
-|----------|---------------|
-| IP 169.254.x.x | DHCP inaccessible |
-| Ping IP OK mais pas le nom | Problème DNS |
-| Port fermé mais ping OK | Firewall ou service arrêté |
-| Latence élevée | Saturation réseau |
-| Connexions bloquées | Route incorrecte |
+7. Examiner les connexions actives  
+   → `Get-NetTCPConnection`
 
 ---
 
-# Bonnes pratiques
+## 🎯 Objectifs d'Apprentissage
 
-- Toujours tester **IP puis DNS**  
-- Documenter les résultats  
-- Automatiser les diagnostics  
-- Comparer avec un poste fonctionnel  
-- Vérifier les journaux système si nécessaire  
+- [ ] Comprendre les étapes d’un diagnostic réseau  
+- [ ] Maîtriser les commandes PowerShell de dépannage  
+- [ ] Identifier les problèmes de connectivité  
+- [ ] Interpréter correctement les résultats  
+- [ ] Appliquer une méthodologie structurée  
 
 ---
 
-# Conclusion
+## ✅ Conclusion
 
-PowerShell est un outil puissant pour diagnostiquer les problèmes réseau sous Windows.  
+Le diagnostic réseau avec PowerShell permet d’identifier rapidement l’origine d’un problème de connectivité.
 
-La clé n’est pas seulement d’exécuter les commandes, mais de savoir **interpréter les résultats et corréler les informations** afin d’identifier rapidement la source d’un incident.
+En suivant une méthode structurée et en interprétant correctement les résultats des commandes, il est possible de :
 
-Une approche méthodique permet :
+- Réduire le temps d’intervention  
+- Éviter des manipulations inutiles  
+- Améliorer l’efficacité du dépannage  
+- Professionnaliser la gestion des incidents réseau  
 
-- De réduire le temps de diagnostic  
-- D’éviter des interventions inutiles  
-- D’améliorer la fiabilité du réseau  
-- De professionnaliser les procédures de dépannage  
+La maîtrise de ces outils est indispensable pour tout administrateur système ou réseau.
+
+---
+ 
+*Diagnostic Réseau avec PowerShell*
