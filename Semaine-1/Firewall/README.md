@@ -201,15 +201,6 @@ L'automatisation des tâches de sécurité réseau apporte de nombreux avantages
 | **Réduction des erreurs** | Éliminer les erreurs manuelles |
 | **Conformité** | Respecter les politiques de sécurité |
 
-### Prochaines étapes
-
-Pour aller plus loin :
-- 🔗 Explorer les profils de groupe (Group Policy)
-- 🔗 Créer des scripts de déploiement massif
-- 🔗 Implémenter la journalisation du firewall
-- 🔗 Automatiser l'audit de sécurité
-
----
 
 ##  Informations supplémentaires
 
