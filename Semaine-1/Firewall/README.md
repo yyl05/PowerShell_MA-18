@@ -242,6 +242,4 @@ Pour aller plus loin :
 **Environnement :** Windows 10/11 avec PowerShell 5.1+  
 **Privilèges requis :** Administrateur
 
----
 
-*Document réalisé à titre académique pour l'enseignement de la cybersécurité et de l'administration système.*
