@@ -79,31 +79,7 @@ Notre solution propose la création d'une **règle de firewall automatisée** qu
 3. Utilise le protocole TCP
 4. Peut être facilement gérée et vérifiée
 
-### Diagramme de flux
 
-```
-┌─────────────────────────────────┐
-│   Demande de trafic entrant     │
-│   Port 23 (Telnet) - TCP        │
-└────────────┬────────────────────┘
-             │
-             ▼
-┌─────────────────────────────────┐
-│  Profil = Private ?             │
-└────────────┬────────────────────┘
-             │
-             ▼
-┌─────────────────────────────────┐
-│  Règle "Bloquer Telnet" active? │
-└────────────┬────────────────────┘
-             │
-        ✓ Oui
-             │
-             ▼
-┌────────────────────────────────���┐
-│     BLOQUER la connexion      │
-└─────────────────────────────────┘
-```
 
 ### Logique d'implémentation
 
