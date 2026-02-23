@@ -2,7 +2,7 @@
 
 ---
 
-## 📌 Introduction
+##  Introduction
 
 ### Présentation du sujet
 
@@ -11,14 +11,14 @@ Ce module couvre la gestion complète du **Windows Defender Firewall** en utilis
 ### Objectif du module
 
 L'objectif de ce projet est d'acquérir les compétences suivantes :
-- ✅ Comprendre les principes fondamentaux du firewall Windows
-- ✅ Créer et modifier des règles de firewall avec PowerShell
-- ✅ Automatiser la gestion de la sécurité réseau
-- ✅ Implémenter des politiques de sécurité cohérentes et efficaces
+-  Comprendre les principes fondamentaux du firewall Windows
+-  Créer et modifier des règles de firewall avec PowerShell
+-  Automatiser la gestion de la sécurité réseau
+-  Implémenter des politiques de sécurité cohérentes et efficaces
 
 ---
 
-## 🔍 Analyse
+##  Analyse
 
 ### Rôle du firewall Windows
 
@@ -31,10 +31,10 @@ Le Windows Defender Firewall est un **système de filtrage de paquets** qui :
 ### Importance de la sécurité réseau
 
 La sécurité réseau est un **pilier fondamental** de la cybersécurité. Un firewall bien configuré :
-- 🛡️ Réduit la surface d'attaque
-- 🛡️ Prévient les accès non autorisés
-- 🛡️ Limite la propagation de malwares
-- 🛡️ Assure la conformité réglementaire
+-  Réduit la surface d'attaque
+-  Prévient les accès non autorisés
+-  Limite la propagation de malwares
+-  Assure la conformité réglementaire
 
 ### Concepts clés du Firewall
 
@@ -46,20 +46,20 @@ La sécurité réseau est un **pilier fondamental** de la cybersécurité. Un fi
 | **Port** | Point de communication | 80 (HTTP), 443 (HTTPS), 23 (Telnet) |
 | **Profil** | Contexte réseau | Domain (domaine), Private (privé), Public (public) |
 
-#### 📊 Direction du trafic
+####  Direction du trafic
 
 | Direction | Définition |
 |-----------|-----------|
 | **Inbound** | Trafic entrant vers le système |
 | **Outbound** | Trafic sortant du système |
 
-#### 🔧 Protocoles de transport
+####  Protocoles de transport
 
 - **TCP (Transmission Control Protocol)** : Protocole orienté connexion, fiable, utilisé pour HTTP, HTTPS, FTP
 - **UDP (User Datagram Protocol)** : Protocole sans connexion, rapide, utilisé pour DNS, VoIP
 - **ICMP** : Protocole de contrôle, utilisé pour le ping
 
-#### 🎯 Profils de firewall
+####  Profils de firewall
 
 | Profil | Utilisation |
 |--------|------------|
@@ -69,7 +69,7 @@ La sécurité réseau est un **pilier fondamental** de la cybersécurité. Un fi
 
 ---
 
-## 🏗️ Conception
+##  Conception
 
 ### Description logique de la solution
 
@@ -101,7 +101,7 @@ Notre solution propose la création d'une **règle de firewall automatisée** qu
              │
              ▼
 ┌────────────────────────────────���┐
-│    ❌ BLOQUER la connexion      │
+│     BLOQUER la connexion      │
 └─────────────────────────────────┘
 ```
 
@@ -116,7 +116,7 @@ Notre solution propose la création d'une **règle de firewall automatisée** qu
 
 ---
 
-## 📝 Exercice
+##  Exercice
 
 ### Consigne
 
@@ -131,7 +131,7 @@ Notre solution propose la création d'une **règle de firewall automatisée** qu
 
 ---
 
-## 💻 Implémentation
+##  Implémentation
 
 ### Création de la règle
 
@@ -201,16 +201,16 @@ Remove-NetFirewallRule -DisplayName "Bloquer Telnet"
 
 ---
 
-## 📚 Conclusion
+##  Conclusion
 
 ### Résumé
 
 Ce module a démontré comment utiliser **PowerShell** pour gérer le **Windows Defender Firewall** de manière efficace et professionnelle. Nous avons :
 
-- ✅ Compris les concepts fondamentaux du firewall
-- ✅ Créé une règle de blocage pour le service Telnet
-- ✅ Vérifié l'application correcte de la règle
-- ✅ Automatisé une tâche de sécurité critique
+-  Compris les concepts fondamentaux du firewall
+-  Créé une règle de blocage pour le service Telnet
+-  Vérifié l'application correcte de la règle
+-  Automatisé une tâche de sécurité critique
 
 ### Importance de l'automatisation avec PowerShell
 
@@ -235,7 +235,7 @@ Pour aller plus loin :
 
 ---
 
-## 📄 Informations supplémentaires
+##  Informations supplémentaires
 
 **Auteur :** Mateo  
 **Date de création :** 2026-02-23  
