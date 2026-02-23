@@ -25,6 +25,22 @@ powershell
 .\DNSetIP.ps1 -InterfaceAlias "NomDeVotreInterface" -Prefix 24
 Utilisez le code avec précaution.
 
+Exemple avec un screen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Note : Si vous ne connaissez pas le nom de votre interface, il faudra tapez Get-NetAdapter.
 Les paramètres :
 Paramètre	Type	Description	Obligatoire
