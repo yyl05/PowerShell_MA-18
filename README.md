@@ -27,8 +27,16 @@ Emel: IP & DNS
 
 # Exercices réalisés
 
+### Mateo : Firewall & PowerShell
 
-Mateo: Firewal
+Découvrir et utiliser les cmdlets PowerShell liées au pare-feu
+
+Comprendre et analyser les règles du firewall Windows
+
+Créer, modifier et vérifier des règles de sécurité réseau
+
+Manipuler les paramètres : ports, protocoles, profils et actions
+
 
 # Notions travaillées
 
