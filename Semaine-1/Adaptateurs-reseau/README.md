@@ -69,4 +69,28 @@ Identifier et résoudre les dysfonctionnements
 
 ---
 
-**Adin Durakovic** | *Adaptateurs réseau*
+
+
+# Exercice PowerShell – Gestion d’un adaptateur réseau
+Créer un script PowerShell qui permet de vérifier et d’activer un adaptateur réseau.
+
+## Consigne
+
+Le script doit :
+
+1. **Afficher** la liste des adaptateurs réseau de l’ordinateur.
+2. **Demander** à l’utilisateur de saisir le nom d’un adaptateur.
+3. **Vérifier** si l’adaptateur existe :
+   - S’il n’existe pas → afficher un message d’erreur et arrêter le script.
+4. S’il existe :
+   - Vérifier s’il est **activé ou désactivé**.
+   - S’il est déjà activé → afficher un message indiquant que tout est normal.
+   -  S’il est désactivé → l’activer.
+5. **Vérifier à nouveau** son état.
+6. **Afficher un message final** indiquant le résultat.
+7. **Terminer le script proprement.**
+
+## Contraintes
+
+- Utiliser les cmdlets PowerShell adaptées (`Get-NetAdapter`, `Enable-NetAdapter`).
+- Le script doit être exécuté en tant qu’administrateur.
