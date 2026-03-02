@@ -95,3 +95,10 @@ Le script doit :
 - Utiliser les cmdlets PowerShell adaptées (`Get-NetAdapter`, `Enable-NetAdapter`).
 - Le script doit être exécuté en tant qu’administrateur.
 ---
+## Conclusion
+
+Les adaptateurs réseau servent à connecter un ordinateur à un réseau, que ce soit en filaire (Ethernet) ou en sans-fil (Wi-Fi). Ils permettent l’échange de données entre l’ordinateur et d’autres appareils, ainsi que l’accès à Internet.
+
+Grâce à des outils comme PowerShell, il est possible de les gérer facilement : vérifier leur état, les activer ou les désactiver, consulter leur configuration IP et diagnostiquer d’éventuels problèmes.
+
+En résumé, les adaptateurs réseau sont indispensables au bon fonctionnement des communications informatiques, et savoir les administrer est une compétence essentielle en administration système et réseau.
