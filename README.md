@@ -86,6 +86,14 @@ Méthodologie de diagnostic:
 - [ ] Structures conditionnelles (if / else)
 - [ ] Gestion des erreurs
 
+### Emel Keres : IP et DNS
+- [ ] Utilisation des cmdlets PowerShell
+- [ ] Utilisation de Set-NetIPInterface
+- [ ] Utilisation de Set-DnsClientServerAddress
+- [ ] Variables
+- [ ] PowerShell en Administrateur
+- [ ] Structures conditionnelles (if / elseif)
+
 ##  Exercices réalisés
 
 - Création d’un script PowerShell de gestion d’un adaptateur réseau
