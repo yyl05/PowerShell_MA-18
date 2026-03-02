@@ -32,19 +32,30 @@ Mateo: Firewal
 
 # Notions travaillées
 
+### Yuri Lima: Diganostic réseau
 
+Méthodologie de diagnostic:
+
+- Vérifier la configuration IP
+- Tester la passerelle
+- Tester une IP publique
+- Tester un nom de domaine
+- Tester un port spécifique
+- Vérifier les routes
+- Analyser les connexions actives
 
 # Exercices réalisés
 
-
-Yuri: Diganostic réseau
+- Vérifie si la connexion Internet fonctionne
+- Vérifie si le DNS fonctionne correctement
+- Teste l’accessibilité d’un port HTTPS
+- Affiche des messages clairs et compréhensibles
+- Les messages doivent être simples et lisibles.
 
 # Notions travaillées
 
 
-
 # Exercices réalisés
-
 
 
 ### Durakovic Adin : Adaptateur réseau
