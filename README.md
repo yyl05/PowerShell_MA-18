@@ -101,6 +101,7 @@ Méthodologie de diagnostic:
 - Vérification de l’existence d’un adaptateur
 - Activation d’un adaptateur désactivé
 - Vérification de l’état après modification
+- Modification IP en Statique ou DHCP
 ---
 
 # Administration serveur
