@@ -1,18 +1,18 @@
 Write-Host "===== DIAGNOSTIC RESEAU =====" -ForegroundColor Cyan
 
 # 1. Test connexion Internet (IP)
-Write-Host "`nTest connexion Internet (8.8.8.8)..."
+Write-Host "`nTest connexion Internet (10.229.60.22)..."
 
-if (Test-Connection 8.8.8.8 -Count 2 -Quiet) {
+if (Test-Connection 10.229.60.22 -Count 2 -Quiet) {
     Write-Host "Connexion Internet OK" -ForegroundColor Green
 } else {
     Write-Host "Pas de connexion Internet !" -ForegroundColor Red
 }
 
 # 2. Test résolution DNS
-Write-Host "`nTest resolution DNS (google.com)..."
+Write-Host "`nTest resolution DNS (cpnv.ch)..."
 
-if (Test-Connection google.com -Count 2 -Quiet) {
+if (Test-Connection cpnv.ch -Count 2 -Quiet) {
     Write-Host "DNS fonctionne correctement" -ForegroundColor Green
 } else {
     Write-Host "Probleme DNS detecte !" -ForegroundColor Red
@@ -30,3 +30,4 @@ if ($testPort.TcpTestSucceeded) {
 }
 
 Write-Host "`n===== FIN DU DIAGNOSTIC =====" -ForegroundColor Cyan
+
