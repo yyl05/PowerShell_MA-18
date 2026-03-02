@@ -16,7 +16,7 @@
 
 ## ANALYSE
 
-Les adaptateurs réseau sont **essentiels au fonctionnement** d'un système informatique connecté. PowerShell permet de les administrer efficacement via des **cmdlets dédiées**.
+Les adaptateurs réseau sont essentiels au fonctionnement d'un système informatique connecté. PowerShell permet de les administrer efficacement via des cmdlets dédiées.
 
 ---
 
@@ -94,6 +94,4 @@ Le script doit :
 
 - Utiliser les cmdlets PowerShell adaptées (`Get-NetAdapter`, `Enable-NetAdapter`).
 - Le script doit être exécuté en tant qu’administrateur.
----
-## Durakovic Adin
 ---
