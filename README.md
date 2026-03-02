@@ -35,11 +35,6 @@ Manipuler les paramètres : ports, protocoles, profils et actions
 
 # Exercices réalisés
 
-
-
-
-# Notions travaillées
-
 Créer une règle PowerShell bloquant le port 23 (Telnet) en trafic entrant
 
 Vérifier l’existence d’une règle avant sa création
@@ -49,6 +44,9 @@ Appliquer une règle sur un profil réseau spécifique (Private)
 Contrôler et valider la configuration avec Get-NetFirewallRule
 
 Tester la logique à l’aide d’un diagramme de flux
+
+
+# Notions travaillées
 
 ### Yuri Lima: Diganostic réseau
 
