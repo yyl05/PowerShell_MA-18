@@ -46,25 +46,24 @@ Yuri: Diganostic réseau
 # Exercices réalisés
 
 
-Adin: Adaptateurs réseau 
 
+### Durakovic Adin : Adaptateur réseau
 # Notions travaillées
-Get-NetAdapter — liste des adaptateurs  	
-Get-NetAdapterStatistics — statistiques réseau  
-Enable-NetAdapter / Disable-NetAdapter  
-Restart-NetAdapter — redémarrage d’une interface  
-Get-NetAdapterAdvancedProperty — propriétés avancées (duplex, vitesse…)  
-Comprendre : interface Ethernet / WiFi / virtuelle  
+- [ ] Utilisation des cmdlets PowerShell
+- [ ] Utilisation de Get-NetAdapter
+- [ ] Utilisation de Enable-NetAdapter
+- [ ] Variables ($variable)
+- [ ] Interaction utilisateur (Read-Host)
+- [ ] Structures conditionnelles (if / else)
+- [ ] Gestion des erreurs
 
-# Exercices réalisés
-Lister les adaptateurs et identifier leur état
+##  Exercices réalisés
 
-Lire des statistiques (paquets envoyés/reçus)
-
-Désactiver puis réactiver une interface
-
-Afficher les propriétés avancées de l’adaptateur
-
-
+- Création d’un script PowerShell de gestion d’un adaptateur réseau
+- Affichage des interfaces réseau disponibles
+- Vérification de l’existence d’un adaptateur
+- Activation d’un adaptateur désactivé
+- Vérification de l’état après modification
+---
 
 # Administration serveur
