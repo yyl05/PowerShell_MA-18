@@ -1,0 +1,19 @@
+EXERCICE - WINDOWS FIREWALL AVEC POWERSHELL
+
+Consigne :
+
+Créer une règle PowerShell qui bloque le port 23 (Telnet) en trafic
+entrant (Inbound) sur le profil Private du pare-feu Windows.
+
+Objectif : - Utiliser la commande New-NetFirewallRule - Définir
+correctement les paramètres : - DisplayName - Direction - Protocol -
+LocalPort - Profile - Action
+
+Commande attendue :
+
+New-NetFirewallRule -DisplayName "Bloquer Telnet" -Direction Inbound
+-Protocol TCP -LocalPort 23 -Profile Private -Action Block
+
+Vérification :
+
+Get-NetFirewallRule -DisplayName “Bloquer Telnet”
