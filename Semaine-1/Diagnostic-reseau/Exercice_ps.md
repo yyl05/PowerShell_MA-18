@@ -3,10 +3,10 @@
 Vous devez créer un script PowerShell qui :
 
 ### 1. Vérifie si la connexion Internet fonctionne
-- Tester la connectivité vers une adresse IP publique (ex : `8.8.8.8`).
+- Tester la connectivité vers une adresse IP publique (ex: `10.229.60.22`).
 
 ### 2. Vérifie si le DNS fonctionne correctement
-- Tester la résolution d’un nom de domaine (ex : `google.com`).
+- Tester la résolution d’un nom de domaine (ex: `cpnv.ch`).
 
 ### 3. Teste l’accessibilité d’un port HTTPS
 - Vérifier si le port `443` d’un site web est accessible.
