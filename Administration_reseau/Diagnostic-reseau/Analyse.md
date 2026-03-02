@@ -132,13 +132,13 @@ Analyse :
    `Test-Connection`
 
 3. Tester une IP publique  
-   `Test-Connection 8.8.8.8`
+   `Test-Connection 10.229.60.22`
 
 4. Tester un nom de domaine  
-   `Test-Connection google.com`
+   `Test-Connection cpnv.ch`
 
 5. Tester un port spécifique  
-   `Test-NetConnection google.com -Port 443`
+   `Test-NetConnection cpnv.ch -Port 443`
 
 6. Vérifier les routes  
    `Get-NetRoute`
@@ -170,5 +170,6 @@ En suivant une méthode structurée et en interprétant correctement les résult
 
 ---
 
-Adin Durakovic  
+Yuri Lima
 Diagnostic Réseau avec PowerShell
+
