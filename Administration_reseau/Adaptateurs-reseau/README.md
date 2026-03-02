@@ -94,3 +94,6 @@ Le script doit :
 
 - Utiliser les cmdlets PowerShell adaptées (`Get-NetAdapter`, `Enable-NetAdapter`).
 - Le script doit être exécuté en tant qu’administrateur.
+---
+## Durakovic Adin
+---
