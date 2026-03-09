@@ -18,8 +18,24 @@ Diagnostiquer un réseau
 
 Manipuler les cartes réseau, les adresses IP, le DNS et le firewall
 
+### Emel Keres : IP et DNS
 
-Emel: IP & DNS
+- [ ] Utilisation des cmdlets PowerShell
+- [ ] Utilisation de Set-NetIPInterface
+- [ ] Utilisation de Set-DnsClientServerAddress
+- [ ] Variables
+- [ ] PowerShell en Administrateur
+- [ ] Structures conditionnelles (if / elseif)
+
+# Exercices réalisés
+Création d'un script qui permet de modifier des paramètres réseau.
+Exécuter PowerShell en Administrateur pour la modification.
+Modification d'un adaptateur réseau.
+Choisir pour comme paramètres soit DHCP ou Statique.
+Si c'est en statique, on configure soit-même l'IP, la passerelle et le DNS.
+- Remove-NetIPAddress
+- New-NetIPAddress
+- Set-DnsClientServerAddress
 
 # Notions travaillées
 
@@ -83,14 +99,6 @@ Méthodologie de diagnostic:
 - [ ] Interaction utilisateur (Read-Host)
 - [ ] Structures conditionnelles (if / else)
 - [ ] Gestion des erreurs
-
-### Emel Keres : IP et DNS
-- [ ] Utilisation des cmdlets PowerShell
-- [ ] Utilisation de Set-NetIPInterface
-- [ ] Utilisation de Set-DnsClientServerAddress
-- [ ] Variables
-- [ ] PowerShell en Administrateur
-- [ ] Structures conditionnelles (if / elseif)
 
 ##  Exercices réalisés
 
