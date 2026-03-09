@@ -27,7 +27,7 @@ Manipuler les cartes réseau, les adresses IP, le DNS et le firewall
 - [ ] PowerShell en Administrateur
 - [ ] Structures conditionnelles (if / elseif)
 
-Exercices réalisés
+# Exercices réalisés
 
 Création d'un script qui permet de modifier des paramètres réseau.
 Exécuter PowerShell en Administrateur pour la modification.
