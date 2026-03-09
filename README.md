@@ -30,10 +30,15 @@ Manipuler les cartes réseau, les adresses IP, le DNS et le firewall
 ## Exercices réalisés
 
 Création d'un script qui permet de modifier des paramètres réseau.
+
 Exécuter PowerShell en Administrateur pour la modification.
+
 Modification d'un adaptateur réseau.
+
 Choisir pour comme paramètres soit DHCP ou Statique.
+
 Si c'est en statique, on configure soit-même l'IP, la passerelle et le DNS.
+
 - Remove-NetIPAddress
 - New-NetIPAddress
 - Set-DnsClientServerAddress
