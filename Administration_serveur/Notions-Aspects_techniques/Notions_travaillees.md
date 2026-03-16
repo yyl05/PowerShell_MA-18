@@ -1,16 +1,16 @@
-# 📊 Résumé Technique : Surveillance des Services PowerShell
+# Résumé Technique : Surveillance des Services PowerShell
 
 Ce document présente l'analyse de l'exercice d'administration serveur concernant la gestion des services Windows.
 
 ---
 
-## 💡 Présentation de la Notion
+## Présentation de la Notion
 La gestion des **services** est un pilier de l'administration serveur. Un service est un programme qui tourne en arrière-plan (ex: serveur web, base de données). 
 L'objectif technique ici est de savoir **interroger le système** pour isoler les composants en panne ou arrêtés.
 
 ---
 
-## 🛠️ Aspects Techniques
+## Aspects Techniques
 Le script utilise le concept de **Pipeline (`|`)**, qui permet de faire passer les données d'une commande à une autre pour les filtrer.
 
 ### Analyse du code :
@@ -20,7 +20,7 @@ Le script utilise le concept de **Pipeline (`|`)**, qui permet de faire passer l
 
 ---
 
-## 🔍 Analyse du Script
+## Analyse du Script
 
 | Point Analysé | Observation |
 | :--- | :--- |
@@ -30,5 +30,5 @@ Le script utilise le concept de **Pipeline (`|`)**, qui permet de faire passer l
 
 ---
 
-## 📈 Conclusion & Perspectives
+## Conclusion & Perspectives
 Cet exercice pose les bases du **monitoring** (surveillance).
